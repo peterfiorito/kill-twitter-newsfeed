@@ -1,0 +1,35 @@
+  {
+    "name": "Kill twitter newsfeed",
+    "version": "1.0",
+    "description": "Make twitter uninteresting and overcome your addiction",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": ["declarativeContent", "activeTab", "storage", "tabs"],
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "images/kill-twitter.png",
+          "48": "images/kill-twitter.png",
+          "128": "images/kill-twitter.png"
+      }
+    },
+    "options_page": "options.html",
+    "icons": {
+        "16": "images/kill-twitter.png",
+        "48": "images/kill-twitter.png",
+        "128": "images/kill-twitter.png"
+    },
+    "content_scripts" : [
+      {
+        "matches" : [
+           "*://*.twitter.com/*"
+        ],
+        "js" : [ "contentscript.js" ],
+        "run_at" : "document_idle",
+        "all_frames" : false
+      }
+    ],
+    "manifest_version": 2
+  }
