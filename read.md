@@ -16,5 +16,10 @@ This was inspired in the Kill-facebook chrome extension, which has work very nic
 
 I will continue to update the extension piece by piece and add more features (I am working on the activate/deactivate pop up as a backup and some additional options). For now, is simple but it does the job.
 
+### Install notes
+1- Clone this repo
+2- Go to chrome://extensions and enable developer mode
+3- Install unpacked extension, pointing to this repo folder
+
 ### Release log
 * v1.00 Simple twitter matching to erase newsfeed
