@@ -1,0 +1,29 @@
+#popup-container{
+  width: 340px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#popup-title{
+  margin: 0px;
+}
+#popup-activate-button{
+  margin-right: auto;
+  margin-left: auto;
+  width: 150px;
+  height: 35px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#popup-activate-button.inactive{
+  background-color: rgb(43, 43, 43);
+}
+#popup-activate-button.active{
+  background-color: rgb(29, 161, 242);
+}
